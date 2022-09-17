@@ -23,7 +23,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site Solution URL: [https://xitizupreti.github.io/intro-component-with-signup-form-master/](https://xitizupreti.github.io/intro-component-with-signup-form-master/)
+- Live Site Solution URL: [https://kshitiz-notes.netlify.app)
 
 ### Built with
 
