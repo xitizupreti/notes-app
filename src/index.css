@@ -22,6 +22,9 @@ footer{
    background-color: yellowgreen;
    font-family: 'Poppins', sans-serif;
 }
+#foot{
+    margin-top: 5%;
+}
 
 footer p{
     font-weight: bold;
