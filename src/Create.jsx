@@ -6,7 +6,7 @@ const Create=()=>{
     <form>
         <input type='text' placeholder="Title" autoComplete="off" />
         <textarea rows='' column="" placeholder="Write Note.. "></textarea>
-        <button>
+        <button id="ins">
             +
         </button>
     </form>

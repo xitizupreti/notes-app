@@ -7,7 +7,7 @@ const Note=()=>{
     <h1>title</h1>
     <hr/>
     <p>content</p>
-    <button>x</button>
+    <button id="del">x</button>
   </div>
   </>
   );
