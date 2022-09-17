@@ -1,13 +1,14 @@
 import React from "react";
 
-const Footer=()=>{
+const Footer = () => {
   return (
-  <><div id="foot">
-  <footer>
-    <p> copyright 2022</p>
-  </footer>
-  </div>
-  </>
+    <>
+      <div id="foot">
+        <footer>
+          <p> copyright 2022</p>
+        </footer>
+      </div>
+    </>
   );
 };
 
