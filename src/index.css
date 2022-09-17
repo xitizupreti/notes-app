@@ -1,7 +1,7 @@
 
 .header{
     background-color: yellow;
-    width: 100%;
+    width:100%;
     height: 80px;
     padding: 1%;
     display: inline-flex;
@@ -28,16 +28,15 @@ footer p{
     margin: -0.01%;
 }
 .main_note{
-    width: 100%;
     padding: 3%;
 }
-.main_note form{
+.main_note div{
     display: grid;
 justify-content: center;
 height: 200px;
 }
 
-.main_note form input{
+.main_note div input{
     height: 30px;
     padding: 3%;
     font-family: 'Poppins', sans-serif;
@@ -49,7 +48,7 @@ height: 200px;
 :focus{
     outline: none;
 }
-.main_note form textarea{
+.main_note div textarea{
     height: 100px;
     padding: 3%;
     font-family: 'Poppins', sans-serif;
@@ -66,7 +65,7 @@ height: 200px;
         text-align: center;
 }
 
-.main_note form button{
+.main_note div button{
     border-radius: 50%;
     width: 45px;
     height: 45px;
@@ -86,37 +85,48 @@ cursor: pointer;
   }
 .note{
     border: 4px solid yellowgreen;
-    height: 150px;
-    width: 30%;
+    height: 200px;
+    width: 300px;
     text-align: center;
+    margin-top: 2%;
     margin-left: 3%;
-    padding: 1%;
     font-family: 'Poppins', sans-serif;
+    overflow:hidden;
+    display: inline-block;
 }
+.note::-webkit-scrollbar {
+    display: none;
+  }
 .note hr{
     border: 2px solid yellow;
     border-radius: 5px;
 }
 .note h1{
     font-size:larger;
-    height: 10px;
+    height: 40px;
+    overflow: scroll;
 }
+.note h1::-webkit-scrollbar {
+    display: none;
+  }
 
 .note p{
     font-size: small;
     font-weight: 100;
-    height:50px ;
+    height:80px ;
+    overflow: scroll;
 }
-
-.note button{
+.note p::-webkit-scrollbar {
+    display: none;
+  }
+#del{
     border-radius: 50%;
     width: 45px;
     height: 45px;
     font-size: x-large;
-border: 4px solid red; 
-margin-left: 95%;
-margin-top: 8%;
+border: 4px solid red;
 cursor: pointer;
+margin-left: -2%;
 }
 
 #del:hover{

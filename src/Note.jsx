@@ -1,14 +1,17 @@
 import React from "react";
 
-const Note=()=>{
+const Note=(props)=>{
+  const deleteNote=()=>{
+    props.deleteItem(props.id);
+  };
   return (
   <>
   <div className="note">
-    <h1>title</h1>
+    <h1>{props.title}</h1>
     <hr/>
-    <p>content</p>
-    <button id="del">x</button>
+    <p>{props.content}</p>
   </div>
+  <button onClick={deleteNote} id="del">x</button>
   </>
   );
 };
