@@ -86,15 +86,17 @@ footer p {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+#grid {
+  display: inline-flex;
+  width: fit-content;
+}
 .note {
   border: 4px solid yellowgreen;
-  width: 300px;
+  width: 330px;
   text-align: center;
   margin-top: 2%;
-  margin-left: 3%;
   font-family: "Poppins", sans-serif;
   overflow: hidden;
-  display: inline-block;
 }
 .note::-webkit-scrollbar {
   display: none;

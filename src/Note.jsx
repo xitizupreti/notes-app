@@ -5,7 +5,7 @@ const Note = (props) => {
     props.deleteItem(props.id);
   };
   return (
-    <>
+    <><div id="grid">
       <div className="note">
         <h1>{props.title}</h1>
         <hr />
@@ -14,6 +14,7 @@ const Note = (props) => {
       <button onClick={deleteNote} id="del">
         x
       </button>
+      </div>
     </>
   );
 };
