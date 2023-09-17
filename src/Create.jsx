@@ -20,16 +20,20 @@ const Create = (props) => {
   };
 
   const addEvent = () => {
-    props.passNote(note);
-    setnote({
-      title: "",
-      content: "",
-    });
+    if (note.title.length > 0 && note.content.length > 1) {
+      props.passNote(note);
+      setnote({
+        title: "",
+        content: "",
+      });
+    } else {
+      alert("Please Type a Title & Description.");
+    }
   };
 
   return (
     <>
-      <div className="main_note">
+      <form onSubmit={(e) => e.preventDefault()} className="main_note">
         <div>
           <input
             type="text"
@@ -51,7 +55,7 @@ const Create = (props) => {
             +
           </button>
         </div>
-      </div>
+      </form>
     </>
   );
 };
