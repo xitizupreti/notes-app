@@ -1,21 +1,17 @@
 import React from "react";
 
-const Note = (props) => {
-  const deleteNote = () => {
-    props.deleteItem(props.id);
-  };
+const Note = ({ id, title, content, deleteItem }) => {
   return (
-    <><div id="grid">
+    <div id="grid">
       <div className="note">
-        <h1>{props.title}</h1>
+        <h1>{title}</h1>
         <hr />
-        <p>{props.content}</p>
+        <p>{content}</p>
       </div>
-      <button onClick={deleteNote} id="del">
+      <button onClick={() => deleteItem(id)} id="del">
         x
       </button>
-      </div>
-    </>
+    </div>
   );
 };
 
